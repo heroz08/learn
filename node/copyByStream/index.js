@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const sourceStream = fs.createReadStream('./data.txt')
-const targetStream = fs.createWriteStream('./target.iso')
+const targetStream = fs.createWriteStream('./target.txt')
 sourceStream.pipe(targetStream)
 
 const { size } = fs.statSync('./data.txt')
