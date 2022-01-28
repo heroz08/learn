@@ -53,6 +53,7 @@ func main() {
 			fmt.Printf("错误啦:%s", err)
 			os.Exit(1)
 		}
+		fmt.Println(resp.Status)
 		if _, err := io.Copy(os.Stdout, resp.Body); err != nil {
 			fmt.Printf("error:%s", err)
 			os.Exit(0)
