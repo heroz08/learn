@@ -6,6 +6,11 @@ import (
 )
 
 func main () {
+	var str string = "233.233"
+	var num int = 233
+	i, err := strconv.Atoi(str)
+	n := strconv.Itoa(num)
+	fmt.Println(i, n, err)
 	var n int = 17
 	var ns = strconv.FormatInt(int64(n), 10)
 	fmt.Println(ns)
